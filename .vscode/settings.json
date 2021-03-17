@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "jogar.C": "cpp",
+        "printCampo.C": "cpp",
+        "gerarCampo.C": "cpp",
+        "recursiva.C": "cpp"
+    }
+}
