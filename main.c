@@ -56,28 +56,28 @@ void keyhandler(XKeyEvent *e, Display *dis, Window win, GC gc, short* mat)
             break;
         
         case XK_Left:
-            printf("move left");
+            printf("move left\n");
             move(mat, 'L');
             redraw(dis, win, gc, mat);
             fflush(stdout);
             break;
 
         case XK_Right:
-            printf("move right");
+            printf("move right\n");
             move(mat, 'R');
             redraw(dis, win, gc, mat);
             fflush(stdout);
             break;
 
         case XK_Up:
-            printf("move up");
+            printf("move up\n");
             move(mat, 'U');
             redraw(dis, win, gc, mat);
             fflush(stdout);
             break;
 
         case XK_Down:
-            printf("move down");
+            printf("move down\n");
             move(mat, 'D');
             redraw(dis, win, gc, mat);
             fflush(stdout);
@@ -107,7 +107,7 @@ void main()
     XSetWindowBackground(dis, win, WhitePixel(dis, screen));
     XClassHint *w_class = XAllocClassHint();
     w_class->res_class = "no-tile";
-    w_class->res_name = "no-tile";
+    w_class->res_name = "2px11";
     XSetClassHint(dis, win, w_class);
 
     short *mat = m_init();
